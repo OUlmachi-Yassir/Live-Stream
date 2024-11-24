@@ -5,6 +5,7 @@ import { UsersModule } from './users/users.module';
 import { AuthModule } from './auth/auth.module';
 import { MongooseModule } from '@nestjs/mongoose';
 import { RoomModule } from './room/room.module';
+import { PlaylistModule } from './playlist/playlist.module';
 
 @Module({
   imports: [
@@ -12,7 +13,7 @@ import { RoomModule } from './room/room.module';
 
     }),
     UsersModule, 
-    AuthModule, RoomModule
+    AuthModule, RoomModule, PlaylistModule
   ],
   controllers: [AppController],
   providers: [AppService],
